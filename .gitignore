@@ -1,0 +1,36 @@
+# Secrets: only .env.example is committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated data (rebuilt by the ingestion pipeline)
+data/index/
+data/cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Course handout: kept locally, not redistributed
+MiniProject_*.pdf
